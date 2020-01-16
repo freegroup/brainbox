@@ -135,6 +135,7 @@ draw2d_circuit_flipflop_JKFlipFlop = draw2d_circuit_flipflop_JKFlipFlop.extend({
         
         var q = this.getOutputPort("output_q");
         var q_ = this.getOutputPort("output_q_not");
+        var v = q.getValue();
         
         var rising = this.last_t===false && t===true; 
         
@@ -155,8 +156,8 @@ draw2d_circuit_flipflop_JKFlipFlop = draw2d_circuit_flipflop_JKFlipFlop.extend({
             }
             // toggle
             else if(j===true && k===true){
-                q.setValue( !q.getValue());
-                q_.setValue( q.getValue());
+                q.setValue( !v );
+                q_.setValue( v );
             }
         }
         this.last_t = t;

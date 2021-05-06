@@ -74,7 +74,7 @@
     "express-session": "^1.17.0",
     "fs-extra": "^8.1.0",
     "glob": "^7.0.3",
-    "handlebars": "4.3.0",
+    "handlebars": "4.7.7",
     "i2c-bus": "^5.2.0",
     "js-treeview": "^1.1.5",
     "jsdom": "9.0.0",
